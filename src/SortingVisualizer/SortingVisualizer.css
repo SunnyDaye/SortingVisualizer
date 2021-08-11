@@ -1,4 +1,6 @@
+
 .array-container {
+    margin: auto;
     display:flex;
     flex-direction: row;
     position: absolute;

@@ -12,7 +12,7 @@ export default function SortingVisualizer(){
             gives the visualized array new values
         @params
             none
-        @returns
+        @return
             none
     */
    function resetArray(){
@@ -46,6 +46,12 @@ export default function SortingVisualizer(){
         ));
     }
 
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HANDLERS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+    function mergeSort(){
+
+    }
+    
     useEffect(()=>{
         resetArray();
     },[]); // Replace compnenetDidMount. We want the array to reset when the page 
@@ -53,9 +59,13 @@ export default function SortingVisualizer(){
 
     //Render
     return (
-        <div className="array-container">
+        <div className="canvas">
+            <div className="array-container">
             {createArrayValueBars()}
+            </div>  
+            <button onClick={resetArray}>Generate new array</button>
         </div>
+        
         
     );
 
